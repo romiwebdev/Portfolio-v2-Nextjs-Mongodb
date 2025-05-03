@@ -7,14 +7,76 @@ import { motion } from "framer-motion";
 
 // Badge styles
 const badge = [
+  // Frontend Frameworks
   "badge_react",
+  "badge_angular",
+  "badge_vue",
+  "badge_svelte",
+  
+  // CSS Frameworks
   "badge_tailwind",
-  "badge_react_query",
-  "badge_nextjs",
-  "badge_firebase",
+  "badge_bootstrap",
+  "badge_materialui",
+  "badge_chakraui",
+  
+  // State Management
+  "badge_redux",
+  "badge_zustand",
+  "badge_recoil",
+  
+  // Backend Frameworks
   "badge_node",
+  "badge_express",
+  "badge_nestjs",
+  "badge_django",
+  "badge_flask",
+  "badge_laravel",
+  "badge_spring",
+  
+  // Databases
   "badge_mongo",
+  "badge_postgresql",
+  "badge_mysql",
+  "badge_firebase",
+  "badge_supabase",
+  "badge_redis",
+  
+  // Mobile
+  "badge_reactnative",
+  "badge_flutter",
+  
+  // Full-stack Frameworks
+  "badge_nextjs",
+  "badge_nuxtjs",
+  "badge_remix",
+  
+  // Cloud/AWS
+  "badge_aws",
+  "badge_azure",
+  "badge_gcp",
+  
+  // Testing
+  "badge_jest",
+  "badge_cypress",
+  
+  // Languages
+  "badge_typescript",
+  "badge_javascript",
+  "badge_python",
+  "badge_java",
+  "badge_go",
+  "badge_rust",
+  "badge_csharp",
+  "badge_php",
+  "badge_kotlin",
+  "badge_swift",
+  
+  // Tools
+  "badge_docker",
+  "badge_kubernetes",
+  "badge_git",
 ];
+
 
 export const ProjectCard = ({ project }) => {
   const [openModal, setOpenModal] = useState(false);
