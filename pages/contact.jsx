@@ -123,7 +123,7 @@ const Contact = () => {
                     href={contactPageData?.alternative?.telegram || ""}
                     target="_blank"
                   >
-                    @FazleRabbiDev
+                    @romiscript
                   </Link>
                 </div>
               </motion.li>
@@ -160,12 +160,8 @@ const Contact = () => {
                     className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
                     aria-label={platform.name}
                   >
-                    {platform.name === "Twitter" ? (
-                      <Twitter className="text-blue-400 w-5 h-5" />
-                    ) : platform.name === "Linkedin" ? (
+                    { platform.name === "Linkedin" ? (
                       <Linkedin className="text-blue-600 w-5 h-5" />
-                    ) : platform.name === "Facebook" ? (
-                      <Facebook className="text-blue-700 w-5 h-5" />
                     ) : platform.name === "Instagram" ? (
                       <Instagram className="text-pink-500 w-5 h-5" />
                     ) : (
