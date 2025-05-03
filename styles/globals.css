@@ -49,28 +49,208 @@
     @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
     font-size: 12px;
   }
+  .badge_angular {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  .badge_vue {
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
+    font-size: 12px;
+  }
+  .badge_svelte {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
+    font-size: 12px;
+  }
+  
+  /* CSS Frameworks */
   .badge_tailwind {
     @apply flex items-center rounded px-2 bg-sky-100 text-sky-700;
     font-size: 12px;
   }
-  .badge_react_query {
-    @apply flex items-center rounded px-2 bg-rose-100 text-rose-700;
+  .badge_bootstrap {
+    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
     font-size: 12px;
   }
-  .badge_nextjs {
-    @apply flex items-center rounded px-2 bg-gray-700 text-gray-100;
+  .badge_materialui {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_chakraui {
+    @apply flex items-center rounded px-2 bg-teal-100 text-teal-700;
+    font-size: 12px;
+  }
+  
+  /* State Management */
+  .badge_redux {
+    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
+    font-size: 12px;
+  }
+  .badge_zustand {
+    @apply flex items-center rounded px-2 bg-gray-100 text-gray-700;
+    font-size: 12px;
+  }
+  .badge_recoil {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  
+  /* Backend Frameworks */
+  .badge_node {
+    @apply flex items-center rounded px-2 bg-lime-400 text-green-700;
+    font-size: 12px;
+  }
+  .badge_express {
+    @apply flex items-center rounded px-2 bg-gray-100 text-gray-700;
+    font-size: 12px;
+  }
+  .badge_nestjs {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  .badge_django {
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
+    font-size: 12px;
+  }
+  .badge_flask {
+    @apply flex items-center rounded px-2 bg-gray-100 text-gray-700;
+    font-size: 12px;
+  }
+  .badge_laravel {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  .badge_spring {
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
+    font-size: 12px;
+  }
+  
+  /* Databases */
+  .badge_mongo {
+    @apply flex items-center rounded px-2 bg-green-300 text-green-700;
+    font-size: 12px;
+  }
+  .badge_postgresql {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_mysql {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
     font-size: 12px;
   }
   .badge_firebase {
     @apply flex items-center rounded px-2 bg-yellow-200 text-yellow-700;
     font-size: 12px;
   }
-  .badge_node {
-    @apply flex items-center rounded px-2 bg-lime-400 text-green-700;
+  .badge_supabase {
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
     font-size: 12px;
   }
-  .badge_mongo {
-    @apply flex items-center rounded px-2 bg-green-300 text-green-700;
+  .badge_redis {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  
+  /* Mobile */
+  .badge_reactnative {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_flutter {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  
+  /* Full-stack Frameworks */
+  .badge_nextjs {
+    @apply flex items-center rounded px-2 bg-gray-700 text-gray-100;
+    font-size: 12px;
+  }
+  .badge_nuxtjs {
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
+    font-size: 12px;
+  }
+  .badge_remix {
+    @apply flex items-center rounded px-2 bg-gray-100 text-gray-700;
+    font-size: 12px;
+  }
+  
+  /* Cloud/AWS */
+  .badge_aws {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
+    font-size: 12px;
+  }
+  .badge_azure {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_gcp {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  
+  /* Testing */
+  .badge_jest {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  .badge_cypress {
+    @apply flex items-center rounded px-2 bg-gray-100 text-gray-700;
+    font-size: 12px;
+  }
+  
+  /* Languages */
+  .badge_typescript {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_javascript {
+    @apply flex items-center rounded px-2 bg-yellow-100 text-yellow-700;
+    font-size: 12px;
+  }
+  .badge_python {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_java {
+    @apply flex items-center rounded px-2 bg-red-100 text-red-700;
+    font-size: 12px;
+  }
+  .badge_go {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_rust {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
+    font-size: 12px;
+  }
+  .badge_csharp {
+    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
+    font-size: 12px;
+  }
+  .badge_php {
+    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
+    font-size: 12px;
+  }
+  .badge_kotlin {
+    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
+    font-size: 12px;
+  }
+  .badge_swift {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
+    font-size: 12px;
+  }
+  
+  /* Tools */
+  .badge_docker {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_kubernetes {
+    @apply flex items-center rounded px-2 bg-blue-100 text-blue-700;
+    font-size: 12px;
+  }
+  .badge_git {
+    @apply flex items-center rounded px-2 bg-orange-100 text-orange-700;
     font-size: 12px;
   }
 
