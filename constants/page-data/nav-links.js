@@ -3,6 +3,7 @@ export const navLinks = [
   "About",
   "Skills",
   "Projects",
-  "Blogs",
-  "Contact"
+  "Certificates",
+  "Contact",
+  "Stats"
 ];

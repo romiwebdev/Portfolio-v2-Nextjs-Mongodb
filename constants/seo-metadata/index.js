@@ -1,32 +1,35 @@
 export const site_metadata = {
-  title: "Fazle Rabbi - Web Developer",
-  desc: "I am Fazle Rabbi, a highly dedicated and skilled Web and Mobile application developer deeply in love with coding. Currently pursuing my B.S.C. Honours degree in the Botany department.Connect with Fazle Rabbi Dev for collaborations, projects, and discussions.",
-  keywords: "fazle rabbi, fazle rabbi dev, fh-rabbi, fazlerabbi, fazlerabbidev, fazle rabby, fazle rabbi web dev, fazle rabbi mia, web developer, bd web developer, mern stack developer, fazle rabbi mern dev",
-  author: "Fazle Rabbi",
-  theme: "#f8f8f8",
-  hostname: "https://fazle-rabbi-dev.vercel.app",
+  // Primary Metadata
+  title: "Muhromin | Fullstack Web Developer",
+  desc: "Professional Fullstack Developer specializing in React, Next.js, Node.js, and Golang. Building scalable web applications with modern technologies. Open for freelance and collaboration opportunities.",
+  keywords: "Fullstack Developer, React Developer, Next.js Expert, Node.js Developer, Golang Backend, Web Portfolio, Muhromin, Indonesia Developer, MERN Stack, Laravel Specialist",
+  author: "Muhromin",
+  theme: "#2563eb", // Warna biru profesional
+  hostname: "https://romifullstack.vercel.app",
+
+  // Page-Specific Metadata
   home: {
-    title: "Fazle Rabbi - MERN Stack Web Developer",
-    desc: "I am Fazle Rabbi a Passionate MERN Stack Web Developer from Bangladesh. Transforming ideas into web applications. Building Full Stack Projects. Bringing life to designs through lines of code. Connect with Fazle Rabbi Dev for collaborations, projects, and discussions.",
+    title: "Muhromin | Fullstack Web Developer",
+    desc: "Professional Fullstack Developer with expertise in JavaScript, React, Next.js, and backend technologies. Transforming complex ideas into efficient web solutions. Certified by BNSP and Dicoding with real-world project experience."
   },
   about: {
-    title: "About Fazle Rabbi - MERN Stack Web Developer",
-    desc: "Learn more about Fazle Rabbi Dev, a passionate MERN Stack Web Developer based in Bangladesh. Explore the journey, skills, and experiences that shape Fazle's commitment to transforming ideas into web applications and bringing designs to life through code."
+    title: "About Muhromin | Fullstack Developer Profile",
+    desc: "Detailed professional background of Muhromin - Certified Fullstack Developer with skills in React, Next.js, Node.js, Laravel, and Golang. Education from SMAN 3 Bojonegoro and intensive bootcamp training."
   },
   skill: {
-    title: "Fazle Rabbi Dev - Web Development Skills",
-    desc: "Explore Fazle Rabbi's proficient web development skills. MERN stack expertise showcased with a passion for coding and a dedication to mastering diverse tech domains."
+    title: "Technical Skills | Muhromin's Expertise",
+    desc: "Comprehensive skill set including: Frontend (React, Next.js, Tailwind), Backend (Node.js, Laravel, Django, Golang), Databases (MySQL, Firebase), and DevOps (Git, Vercel)."
   },
   project: {
-    title: "Fazle Rabbi Dev - Full Stack Projects",
-    desc: "Discover Fazle Rabbi's portfolio of Full Stack Projects. From web applications to dynamic solutions, explore the diverse range of projects showcasing coding expertise and creativity."
-  },
-  blog: {
-    title: "Fazle Rabbi Dev - Tech Blogs",
-    desc: "Read insightful tech blogs by Fazle Rabbi Dev. Delve into topics ranging from web development trends to coding techniques, written with a passion for sharing knowledge and experiences."
+    title: "Project Portfolio | Muhromin's Work Showcase",
+    desc: "Collection of professional projects demonstrating fullstack capabilities: responsive web apps, REST APIs, and performance-optimized solutions using modern tech stacks."
   },
   contact: {
-    title: "Fazle Rabbi Dev - Get in Touch",
-    desc: "Connect with Fazle Rabbi Dev for collaborations, inquiries, or discussions. Reach out to this passionate MERN stack web developer and start a conversation about your ideas, projects, or tech-related endeavors."
+    title: "Contact Muhromin | Collaboration Opportunities",
+    desc: "Available for freelance projects, internships, and tech collaborations. Connect via email or LinkedIn to discuss web development opportunities."
+  },
+  blog: {
+    title: "Tech Insights | Muhromin's Development Blog",
+    desc: "Articles on web development best practices, React optimization, backend architecture, and career growth for developers."
   }
-}
+};

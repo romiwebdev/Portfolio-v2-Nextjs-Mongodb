@@ -144,3 +144,82 @@
     @apply px-2 py-1 bg-white shadow-2xl border-[1px] border-gray-400 rounded-lg flex justify-center items-center gap-2 transition duration-200 dark:hover:bg-gray-200 active:scale-95 dark:text-black dark:border-none dark:shadow-none
   }
 }
+
+/* Animasi untuk error message */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.shake-animation {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Admin Styles */
+.admin-card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow;
+}
+
+.admin-card h3 {
+  @apply text-lg font-medium text-gray-800 mb-2;
+}
+
+.admin-card p {
+  @apply text-gray-600 text-sm;
+}
+
+.admin-form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.admin-form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+}
+
+.admin-form-button {
+  @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+.admin-form-button:disabled {
+  @apply opacity-70 cursor-not-allowed;
+}
+
+/* Drag and Drop Styles */
+.cursor-move {
+  cursor: move;
+}
+
+.drag-preview {
+  opacity: 0.5;
+  background-color: #f0f9ff;
+}
+
+.drag-over {
+  background-color: #f0fdf4;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

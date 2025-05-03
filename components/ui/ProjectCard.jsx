@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Github, ExternalLink, Info, Star, Blocks } from "lucide-react";
+import { Github, ExternalLink, Info } from "lucide-react";
 import Image from "next/image";
 import { ProjectModal } from "@/components";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
-// These for dynamic style
+// Badge styles
 const badge = [
   "badge_react",
   "badge_tailwind",
@@ -23,22 +24,26 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <li className="group project_card">
+    <motion.li
+      className="group project_card"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+    >
       <div onClick={toggleModal}>
-        <div className="overflow-hidden">
+        <motion.div className="overflow-hidden" whileHover={{ scale: 1.05 }}>
           <Image
-            className="w-full rounded-t-2xl transition duration-500 group-hover:scale-105"
+            className="w-full rounded-t-2xl transition duration-500"
             src={project?.cover}
             width={600}
             height={300}
             alt={project?.name}
           />
-        </div>
+        </motion.div>
 
         {/* Project Info */}
         <div className="p-4 relative">
           <div className="mb-2 border-b-[.7px] border-gray-700/20">
-            <h3 className="text-xl font-ranade-bold">{project?.name}</h3>
+            <h3 className="text-xl font-bold">{project?.name}</h3>
             <div className="my-2 flex gap-2 flex-wrap">
               {project?.technologies?.map(tech => (
                 <span key={tech.name} className={tech.style}>
@@ -56,42 +61,44 @@ export const ProjectCard = ({ project }) => {
       </div>
 
       {/* Actions */}
-      <ul className="pb-4 pr-4 flex gap-4 justify-end items-center gap-2">
-        <li className="">
+      <ul className="pb-4 pr-4 flex gap-4 justify-end items-center">
+        <li>
           <Link target="_blank" href={project?.links?.github || ""}>
-            <button
-              className="cursor-pointer transition duration-300 hover:scale-125"
+            <motion.button
+              className="cursor-pointer transition transform duration-300 hover:scale-125"
               type="button"
+              whileHover={{ scale: 1.2 }}
             >
               <Github size={23} />
-            </button>
+            </motion.button>
           </Link>
         </li>
-        <li className="">
+        <li>
           <Link target="_blank" href={project?.links?.live || ""}>
-            <button
-              className="cursor-pointer transition duration-300 hover:scale-125"
+            <motion.button
+              className="cursor-pointer transition transform duration-300 hover:scale-125"
               type="button"
+              whileHover={{ scale: 1.2 }}
             >
               <ExternalLink size={25} />
-            </button>
+            </motion.button>
           </Link>
         </li>
-
         <li>
-          <button
+          <motion.button
             onClick={toggleModal}
-            className="cursor-pointer transition duration-300 hover:scale-125"
+            className="cursor-pointer transition transform duration-300 hover:scale-125"
             type="button"
+            whileHover={{ scale: 1.2 }}
           >
             <Info size={25} />
-          </button>
+          </motion.button>
         </li>
       </ul>
 
       {openModal && (
         <ProjectModal project={project} toggleModal={toggleModal} />
       )}
-    </li>
+    </motion.li>
   );
 };

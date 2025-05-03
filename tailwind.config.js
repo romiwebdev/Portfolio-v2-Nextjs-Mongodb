@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "ranade-bold": ["Ranade-Bold", "sans"],
-        "ranade-light": ["Ranade-Light", "sans"],
+        "ranade-bold": ["Ranade-Bold", "sans-serif"],
+        "ranade-light": ["Ranade-Light", "sans-serif"],
         exo: ["Exo", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"]
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         dark_1: "#121212",
@@ -22,8 +22,8 @@ module.exports = {
         light_2: "#f0f0f0",
         light_3: "#ededed",
         offwhite: "#D0DFFF",
-      }
-    }
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
