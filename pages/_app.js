@@ -51,6 +51,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+        <meta name="google-site-verification" content="CC6bjZ45EFPO-vkaeJE8sfjrf5umq-IyAiSuhYUyfpc" />
       </Head>
 
       <ThemeProvider>
