@@ -46,40 +46,6 @@ This is a modern portfolio website built with Next.js and MongoDB, featuring a r
 - MongoDB Atlas account or local MongoDB installation
 - Git
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Set up environment variables:
-   Create a `.env.local` file in the root directory with the following variables:
-   ```
-   MONGODB_URI=your_mongodb_connection_string
-   NEXTAUTH_SECRET=your_random_secret_string
-   NEXTAUTH_URL=http://localhost:3000
-   ADMIN_EMAIL=your_admin_email
-   ADMIN_PASSWORD_HASH=your_hashed_password
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
 ## Project Structure
 
 ```
@@ -126,28 +92,9 @@ Access the admin dashboard at `/admin` (authentication required). Features inclu
 - Form validation and error handling
 - Responsive design for all devices
 
-## Deployment
-
-The application can be deployed to Vercel (recommended for Next.js) or other platforms:
-
-1. **Vercel**:
-   - Connect your GitHub repository
-   - Add environment variables
-   - Deploy
-
-2. **Other platforms**:
-   - Build the project: `npm run build`
-   - Start the production server: `npm start`
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
-
-Project Link: [https://github.com/your-username/your-portfolio](https://github.com/your-username/your-portfolio)
 
 ## Acknowledgments
 

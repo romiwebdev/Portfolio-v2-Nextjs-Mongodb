@@ -33,8 +33,8 @@ const Project = () => {
       try {
         const res = await fetch('/api/projects');
         const data = await res.json();
-        const sortedProjects = data.sort((a, b) => 
-          (a.order || 0) - (b.order || 0) || 
+        const sortedProjects = data.sort((a, b) =>
+          (a.order || 0) - (b.order || 0) ||
           new Date(b.createdAt) - new Date(a.createdAt)
         );
         setProjects(sortedProjects);
@@ -52,8 +52,8 @@ const Project = () => {
     <section className="sm:max-w-3xl">
       <SeoMetadata title={site_metadata?.project?.title} desc={site_metadata?.project?.desc} />
 
-      <PageTitle title="My notable projects" effect="purple" />
-      <p className="info my-4">Dive into my projects! See how I create cool web apps and tackle backend challenges using MERN stack. It's a journey of coding magic – join me in exploring innovation!</p>
+      <PageTitle title="Selected works I've built" effect="purple" />
+      <p className="info my-4">Check out my projects! Discover how I develop functional websites and solve backend problems using fullstack tools. It's all about turning logic into product – come explore the code!</p>
 
       <div className="my-10">
         <p className="mb-2 flex items-center gap-1 font-medium font-bold text-black dark:text-white">
@@ -78,10 +78,10 @@ const Project = () => {
           <span className="text-purple-500 dark:text-teal-500">
             <Star />
           </span>
-          {projectType === "all" ? "All" : 
-           projectType === "frontend" ? "Frontend" :
-           projectType === "backend" ? "Backend" :
-           projectType === "fullstack" ? "Fullstack" : "Miscellaneous"} Projects
+          {projectType === "all" ? "All" :
+            projectType === "frontend" ? "Frontend" :
+              projectType === "backend" ? "Backend" :
+                projectType === "fullstack" ? "Fullstack" : "Miscellaneous"} Projects
         </h2>
 
         {loading ? (

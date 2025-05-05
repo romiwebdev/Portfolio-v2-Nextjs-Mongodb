@@ -25,10 +25,10 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Muhromin | Fullstack Web Developer</title>
-        <meta name="title" content="Muhromin | Fullstack Web Developer" />
-        <meta name="description" content="Portfolio Muhromin - Fullstack Developer dengan keahlian di React, Next.js, Node.js, Laravel, dan Golang. Siap membangun solusi web yang skalabel." />
-        <meta name="keywords" content="Fullstack Developer, React, Next.js, Node.js, Laravel, Golang, Portfolio, Muhromin" />
+        <title>Muhromin | Fullstack Developer</title>
+        <meta name="title" content="Muhromin | Fullstack Developer" />
+        <meta name="description" content="Muhromin's Portfolio – A passionate Fullstack Web Developer from Indonesia, skilled in React, Next.js, Node.js, Laravel, Django, and Golang. Experienced in building scalable web applications, crafting modern UI/UX, and solving real-world tech problems. Open to freelance, internship, and collaboration opportunities." />
+        <meta name="keywords" content="Muhromin, Fullstack Developer, Web Developer Indonesia, React Developer, Next.js Developer, Node.js Developer, Laravel Developer, Django Developer, Golang Developer, MERN Stack, JavaScript, PHP, Python, Web Portfolio, Software Engineer, Frontend Developer, Backend Developer, Firebase, MySQL, Vercel, GitHub, Tailwind CSS, API Integration, Tech Enthusiast, Junior Developer, SMAN 3 Bojonegoro, Web Design, Fullstack Projects, Coding, Programmer Indonesia, Web Development, Open Source, Muhromin smaga, Romi smaga, Romi Bojonegoro, Muhromin Bojonegoro, Muhromin SMAN 3 Bojonegoro, Muhromin Unesa" />
         <meta name="author" content="Muhromin" />
         <meta name="theme-color" content="#3b82f6" />
 
