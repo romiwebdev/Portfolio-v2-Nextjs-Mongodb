@@ -206,20 +206,19 @@ export default function ManageProjects() {
   // Pada fungsi handleSubmit
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Validasi required fields
+  
     if (!formData.cover) {
       alert('Cover image is required');
       return;
     }
-
+  
     try {
       let response;
       const method = currentProject ? 'PUT' : 'POST';
       const url = currentProject
         ? `/api/projects/${currentProject.id}`
         : '/api/projects';
-
+  
       response = await fetch(url, {
         method,
         headers: {
@@ -227,14 +226,24 @@ export default function ManageProjects() {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Failed to save project');
       }
-
-      const updatedProjects = await fetch('/api/projects').then(res => res.json());
-      setProjects(updatedProjects);
+  
+      const savedProject = await response.json();
+  
+      if (currentProject) {
+        // Update project yang ada
+        setProjects(prev => prev.map(p => 
+          p.id === currentProject.id ? savedProject : p
+        ));
+      } else {
+        // Tambahkan project baru di akhir
+        setProjects(prev => [...prev, savedProject]);
+      }
+  
       resetForm();
       setIsModalOpen(false);
     } catch (error) {

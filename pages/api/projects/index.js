@@ -17,13 +17,21 @@ export default async function handler(req, res) {
   try {
     // GET all projects
     if (req.method === 'GET') {
-      const projects = await Project.find().sort({ createdAt: -1 });
+      const projects = await Project.find().sort({ order: 1 }); // Urutkan berdasarkan order
       return res.status(200).json(projects);
     }
     
     // POST new project
     if (req.method === 'POST') {
-      const project = new Project(req.body);
+      // Cari order tertinggi saat ini
+      const lastProject = await Project.findOne().sort({ order: -1 });
+      const newOrder = lastProject ? lastProject.order + 1 : 0;
+      
+      const project = new Project({
+        ...req.body,
+        order: newOrder // Set order baru
+      });
+      
       await project.save();
       return res.status(201).json(project);
     }
