@@ -15,7 +15,7 @@ const renderProjects = (projects, projectType) => {
   });
 
   return filteredProjects.map(project => {
-    if (["frontend", "fullstack"].includes(project.category)) {
+    if (["frontend", "fullstack", "backend", "misc"].includes(project.category)) {
       return <ProjectCard key={project.id} project={project} />;
     } else {
       return <ProjectList key={project.id} {...project} />;
